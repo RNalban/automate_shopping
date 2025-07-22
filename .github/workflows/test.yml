@@ -20,4 +20,18 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run tests
+      env:
+          CHROME_USER: ${{ secrets.CHROME_USER }}
+          CHROME_PASS: ${{ secrets.CHROME_PASS }}
+          FIREFOX_USER: ${{ secrets.FIREFOX_USER }}
+          FIREFOX_PASS: ${{ secrets.FIREFOX_PASS }}
       run: npm test
+
+    - name: Generate Allure Report
+      run: npm run report
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./allure-report    
