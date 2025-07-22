@@ -68,12 +68,12 @@ set FIREFOX_PASS=your_password
 
 To run all Playwright tests:
 ```sh
-npx playwright test
+npm test
 ```
 
 To run tests with Allure reporting:
 ```sh
-npx playwright test --reporter=allure-playwright
+npm run report
 ```
 
 To view the Allure report:
