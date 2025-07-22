@@ -1,0 +1,19 @@
+{
+  "name": "automate_shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "playwright-install": "playwright install",
+    "test": "playwright test",
+    "report": "allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.2"
+  }
+}
