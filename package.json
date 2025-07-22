@@ -6,7 +6,7 @@
   "scripts": {
     "playwright-install": "playwright install",
     "test": "playwright test",
-    "report": "allure serve allure-results"
+    "report": "allure generate allure-results --clean -o allure-report"
   },
   "keywords": [],
   "author": "",
