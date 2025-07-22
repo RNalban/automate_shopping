@@ -1,9 +1,9 @@
 name: Automate Testing SauceLabs Shopping  Application with Playwright
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
