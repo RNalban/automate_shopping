@@ -8,8 +8,8 @@ const CartPage = require('../pages/CartPage');
 
 test.describe.configure({ mode: 'serial' });
 const credentials = {
-  chromium: { username: process.env.CHROME_USER, password: process.env.CHROME_PASSWORD, },
-  firefox: { username: process.env.FIREFOX_USER, password: process.env.FIREFOX_PASSWORD },
+  chromium: { username: process.env.CHROME_USER, password: process.env.CHROME_PASS, },
+  firefox: { username: process.env.FIREFOX_USER, password: process.env.FIREFOX_PASS },
  
 };
 test.describe('login as registered user', () => {
